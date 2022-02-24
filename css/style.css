@@ -195,7 +195,7 @@ li {
     display: flex;
     height: 690px;
     background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    /*    backdrop-filter: blur(10px);*/
     border-radius: 15px;
     border: 1px solid rgb(108, 108, 108);
     box-shadow: 1px 1px 4px 0px rgba(255, 255, 255, 0.9);
@@ -398,7 +398,7 @@ li {
     width: 75%;
     padding: 50px 40px;
     background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    /*    backdrop-filter: blur(10px);*/
     border-radius: 15px;
     border: 1px solid rgb(108, 108, 108);
     box-shadow: 1px 1px 4px 0px rgba(255, 255, 255, 0.9);
@@ -668,7 +668,6 @@ li {
     opacity: 1;
 }
 
-/*==================footer==================*/
 @media screen and (max-width: 1600px) {
 
     /*==================Map==================*/
@@ -1334,7 +1333,7 @@ li {
     }
 
     .locate_timing h5 {
-        font-size: 5vw;
+        font-size: 4vw;
         line-height: 7vw;
     }
 
@@ -1354,33 +1353,34 @@ li {
     }
 
     /*==================footer==================*/
+    .footer {
+        height: 12vw;
+    }
+
     .footer_logo .nav_link {
         display: block;
     }
 
-    .footer_title h1 {
-        line-height: 30px;
-        font-size: 3.2vw;
+
+    .footer_logo {
+        width: 50%;
     }
 
-    .footer_title h2 {
+    .footer_logo img {
+        width: 70%;
+        height: auto;
+    }
+
+    .footer_title {
         display: none;
     }
 
-    .social img {
-        height: 30px;
+    .social {
+        width: 50%;
     }
 
     .social img {
-        height: 20px;
-    }
-
-    .tel_01 {
-        margin-left: 5px;
-    }
-
-    .mail_01 {
-        margin-left: 5px;
+        height: 40px;
     }
 }
 
@@ -1429,25 +1429,9 @@ li {
     }
 
     /*==================footer==================*/
-    .footer_logo {
-        display: none;
-    }
 
-    .footer_inner {
-        width: 100%
-    }
-
-    .footer_title {
-        width: 70%;
-    }
-
-    .footer_title h1 {
-        font-size: 3.5vw;
-        line-height: 15px
-    }
-
-    .social {
-        width: 30%;
+    .social img {
+        height: 30px;
     }
 }
 
