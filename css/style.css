@@ -17,52 +17,9 @@ body {
     padding: 0 15px;
 }
 
-h1 {
-    font-size: 43px;
-    line-height: 58px;
-    font-weight: 700;
-    color: #f7f6f2;
-}
-
-h2 {
-    font-size: 43px;
-    line-height: 58px;
-    font-weight: 700;
-    color: #f7f6f2;
-}
-
-h3 {
-    font-size: 40px;
-    line-height: 58px;
-    font-weight: 700;
-    color: #ebe5e5;
-}
-
-h4 {
-    font-size: 30px;
-    line-height: 58px;
-    font-weight: 700;
-    color: #fff;
-}
-
-h5 {
-    font-size: 25px;
-    line-height: 58px;
-    font-weight: 700;
-    color: #fff;
-}
-
-li {
-    padding-left: 25px;
-    list-style: circle;
-    font-size: 32px;
-    line-height: 58px;
-    color: #ebe5e5;
-}
-
 .line {
     border-bottom: 2px solid #bbc4d8;
-    margin: 30px 30px;
+    margin: 10px 0px;
     box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -190,12 +147,32 @@ li {
     height: 830px;
 }
 
+.phone h2 {
+    font-size: 43px;
+    line-height: 80px;
+    font-weight: 700;
+    color: #f7f6f2;
+}
+
+.phone h3 {
+    font-size: 40px;
+    line-height: 80px;
+    font-weight: 700;
+    color: #ebe5e5;
+}
+
+.phone .container {
+    display: flex;
+    justify-content: center;
+}
+
 .phone_inner {
     overflow: hidden;
     display: flex;
+    width: 1170px;
     height: 690px;
     background: rgba(255, 255, 255, 0.2);
-    /*    backdrop-filter: blur(10px);*/
+    /*    backdrop-filter: blur(5px);*/
     border-radius: 15px;
     border: 1px solid rgb(108, 108, 108);
     box-shadow: 1px 1px 4px 0px rgba(255, 255, 255, 0.9);
@@ -203,8 +180,7 @@ li {
 
 .left_p {
     flex-wrap: wrap;
-    padding: 200px 30px 0px 30px;
-    margin-right: 5px;
+    padding: 160px 0px 0px 50px;
     width: 60%;
 }
 
@@ -301,13 +277,33 @@ li {
 }
 
 /*==================Comp==================*/
+.w1440 {
+    display: none;
+}
+
 .comp {
     background: url(../img/comp_fon.png) center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
     padding: 0 15px;
-    height: 750px;
+    height: 680px;
+}
+
+.comp h2 {
+    font-size: 40px;
+    line-height: 90px;
+    font-weight: 700;
+    color: #f7f6f2;
+}
+
+.comp li {
+    padding-left: 3vw;
+    list-style: circle;
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: 700;
+    color: #ebe5e5;
 }
 
 .comp_inner_top {
@@ -323,7 +319,8 @@ li {
 }
 
 .laptop img {
-    width: 40%;
+    max-width: 900px;
+    width: 45%;
     height: auto;
 }
 
@@ -350,8 +347,7 @@ li {
 }
 
 .left_c {
-    margin-right: 10px;
-    width: 40%;
+    width: 50%;
 }
 
 .right_c {
@@ -360,14 +356,6 @@ li {
     padding: 0px 30px;
     width: 50%;
     overflow: hidden;
-}
-
-.right_c h2 {
-    font-size: 2vw;
-}
-
-.right_c li {
-    font-size: 1.7vw;
 }
 
 .animation_fon {
@@ -380,7 +368,7 @@ li {
 
 .animation_fon.element-show {
     opacity: 1;
-    height: 400px;
+    height: 450px;
 }
 
 .comp_inner_bottom {
@@ -395,17 +383,20 @@ li {
 }
 
 .comp_inner_bottom_inner {
-    width: 75%;
+    width: 1700px;
     padding: 50px 40px;
     background: rgba(255, 255, 255, 0.2);
-    /*    backdrop-filter: blur(10px);*/
+    backdrop-filter: blur(5px);
     border-radius: 15px;
     border: 1px solid rgb(108, 108, 108);
     box-shadow: 1px 1px 4px 0px rgba(255, 255, 255, 0.9);
 }
 
 .comp_inner_bottom_inner h1 {
-    font-size: 2vw;
+    font-size: 40px;
+    line-height: 80px;
+    font-weight: 700;
+    color: #ebe5e5;
 }
 
 .comp_inner_bottom_inner .line {
@@ -424,7 +415,6 @@ li {
     height: 60vw;
     opacity: .8;
     text-align: center;
-    border: 1px solid #fff;
     padding: 0 5%;
 }
 
@@ -457,6 +447,8 @@ li {
 }
 
 .prom h1 {
+    color: #fff;
+    font-weight: 700;
     font-size: 15vw;
     font-family: 'Teko', sans-serif;
     letter-spacing: 5vw;
@@ -476,13 +468,17 @@ li {
 }
 
 .locate_timing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 50%;
     height: 670px;
-    padding: 60px 30px;
 }
 
 .locate_timing h4 {
     color: #27262c;
+    font-size: 2vw;
+    line-height: 3vw;
 }
 
 .timing_inner {
@@ -509,7 +505,8 @@ li {
 
 .time h5 {
     color: #ff0000;
-    font-size: 25px;
+    font-size: 1.6vw;
+    line-height: 3vw;
     text-align: center;
 }
 
@@ -520,6 +517,8 @@ li {
 .adress h5 {
     text-align: center;
     color: #27262c;
+    font-size: 1.5vw;
+    line-height: 3vw;
 }
 
 .locate_map {
@@ -556,44 +555,50 @@ li {
 .footer {
     display: flex;
     justify-content: center;
+    text-align: center;
     height: 150px;
-    background: #363636;
+    background: #676767;
+}
+
+.footer h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #f7f6f2;
+    margin-bottom: 20px;
+}
+
+.footer h2 {
+    font-size: 20px;
+    color: #f7f6f2;
 }
 
 .footer_inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .footer_logo {
-    width: 30%;
+    width: 20%;
     text-align: center;
+    padding: 0px 15px;
 }
 
 .footer_logo img {
-    width: 60%;
+    width: 100%;
     height: auto;
 }
 
 .footer_title {
-    width: 50%;
+    width: 60%;
     text-align: center;
-}
-
-.footer_title h1 {
-    font-size: 2.5vw;
-}
-
-.footer_title h2 {
-    font-size: 1vw;
-    font-weight: 400;
 }
 
 .social {
     display: flex;
     width: 20%;
-    justify-content: center;
+    padding: 0px 45px;
+    justify-content: space-between;
 }
 
 .social img {
@@ -629,7 +634,6 @@ li {
 .tel_01 {
     border: .2vw solid #000;
     border-radius: .8vw;
-    margin-left: 15px;
 }
 
 .tel_02 {
@@ -638,7 +642,6 @@ li {
     position: absolute;
     opacity: 0;
     transition: all .3s linear;
-    margin-left: 15px;
 }
 
 .tel_02:hover {
@@ -652,7 +655,6 @@ li {
 .mail_01 {
     border: .2vw solid #000;
     border-radius: .8vw;
-    margin-left: 15px;
 }
 
 .mail_02 {
@@ -661,11 +663,46 @@ li {
     position: absolute;
     opacity: 0;
     transition: all .3s linear;
-    margin-left: 15px;
 }
 
 .mail_02:hover {
     opacity: 1;
+}
+
+@media screen and (max-width: 1880px) {
+
+    /*==================Comp==================*/
+    .comp h2 {
+        font-size: 35px;
+    }
+
+    .comp li {
+        font-size: 32px;
+    }
+
+    .comp_inner_bottom_inner {
+        width: 1500px;
+    }
+
+    .comp_inner_bottom_inner h1 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1667px) {
+
+    /*==================Comp==================*/
+    .comp h2 {
+        font-size: 33px;
+    }
+
+    .comp li {
+        font-size: 30px;
+    }
+
+    .comp_inner_bottom_inner {
+        width: 1300px;
+    }
 }
 
 @media screen and (max-width: 1600px) {
@@ -678,6 +715,22 @@ li {
     .locate_map {
         width: 60%;
     }
+
+    .adress h5 {
+        font-size: 1.7vw;
+    }
+}
+
+@media screen and (max-width: 1579px) {
+
+    /*==================Comp==================*/
+    .comp h2 {
+        font-size: 29px;
+    }
+
+    .comp li {
+        font-size: 27px;
+    }
 }
 
 @media screen and (max-width: 1441px) {
@@ -687,44 +740,35 @@ li {
         height: 70%;
     }
 
+    /*==================Phone==================*/
+    .phone {
+        height: 880px;
+    }
+
     /*==================Comp==================*/
+    .w1980 {
+        display: none;
+    }
+
+    .w1440 {
+        display: block;
+        text-align: center;
+    }
+
     .comp {
-        height: 700px;
+        height: 525px;
     }
 
     .comp_inner_top {
-        height: 700px;
+        height: 415px;
     }
 
-    .left_c {
-        width: 45%;
+    .comp_inner_bottom_inner {
+        width: 1100px;
     }
 
-    .right_c {
-        width: 55%;
-    }
-
-    .right_c h2 {
-        font-size: 2.2vw;
-    }
-
-    .right_c li {
-        font-size: 1.9vw;
-    }
-
-    /*==================Map==================*/
-    .locate_timing {
-        padding: 60px 35px;
-    }
-
-    /*==================footer==================*/
-    .footer {
-        height: 10vw;
-    }
-
-    .footer_title h1,
-    h2 {
-        line-height: 45px;
+    .comp_inner_bottom_inner h1 {
+        font-size: 29px;
     }
 }
 
@@ -732,154 +776,206 @@ li {
 
     /*==================Phone==================*/
     .phone {
-        height: 56vw;
+        height: 730px;
     }
 
-    .phone .container {
-        display: flex;
-        justify-content: center;
+    .phone h2 {
+        font-size: 40px;
+        line-height: 75px;
+    }
+
+    .phone h3 {
+        font-size: 37px;
+        line-height: 75px;
     }
 
     .phone_inner {
-        width: 80vw;
-        height: 45vw;
+        width: 1100px;
+        height: 590px;
     }
 
     .left_p {
-        padding-top: 10%;
-    }
-
-    .left_p h2,
-    h3 {
-        font-size: 2.8vw;
+        padding: 110px 0px 0px 60px;
     }
 
     .right_p {
-        padding-top: 35px;
+        padding-top: 55px;
     }
 
-    /*==================Comp==================*/
-    .comp {
-        height: 52vw;
-    }
-
-    .comp_inner_top {
-        height: 52vw;
-    }
-
-    .right_c {
-        padding-top: 0;
-    }
-
-    .right_c .line {
-        margin: 20px 30px;
-    }
-
-    .animation_fon.element-show {
-        height: 380px;
+    .right_phone img {
+        width: 80%;
     }
 
     /*==================Map==================*/
     .locate {
-        height: 680px;
+        height: 650px;
     }
 
     .locate_inner {
-        height: 680px;
+        height: 650px;
     }
 
     .locate_timing {
-        width: 35%;
-        height: 671px;
+        height: 620px;
     }
 
     .locate_map {
-        width: 65%;
-        height: 671px;
+        height: 620px;
     }
 
-    .locate_timing h4 {
-        font-size: 20px;
+    .map_1980 {
+        width: 747px;
+        height: 621px;
     }
 
-    .locate_timing h5 {
-        font-size: 22px;
+    .locate_map_inner iframe {
+        padding: 35px 0px 65px 120px;
+        width: 747px;
+        height: 621px;
     }
 
-    /*==================footer==================*/
-
-    .footer_logo {
-        width: 20%;
+    /*==================Footer==================*/
+    .footer h1 {
+        font-size: 40px;
+        margin-bottom: 18px;
     }
 
-    .footer_logo img {
-        width: 90%;
-    }
-
-    .footer_title {
-        width: 60%;
+    .footer h2 {
+        font-size: 18px;
     }
 
     .social {
-        width: 20%;
+        padding: 0px 25px;
     }
 }
 
 @media screen and (max-width: 1230px) {
 
+    /*==================Phone==================*/
+    .phone {
+        height: 630px;
+    }
+
+    .phone h2 {
+        font-size: 33px;
+        line-height: 65px;
+    }
+
+    .phone h3 {
+        font-size: 30px;
+        line-height: 65px;
+    }
+
+    .phone_inner {
+        width: 900px;
+        height: 500px;
+    }
+
+    .left_p {
+        padding: 100px 0px 0px 40px;
+    }
+
+    /*==================Comp==================*/
+    .comp {
+        height: 515px;
+    }
+
+    .comp h2 {
+        font-size: 26px;
+        line-height: 80px;
+    }
+
+    .comp li {
+        font-size: 25px;
+        line-height: 80px;
+    }
+
+    .right_c {
+        padding: 0px 10px 0px 20px;
+    }
+
+    .animation_fon.element-show {
+        height: 300px;
+    }
+
+    .comp_inner_bottom_inner {
+        width: 950px;
+        padding: 20px 40px;
+    }
+
+    .comp_inner_bottom_inner h1 {
+        font-size: 26px;
+        line-height: 60px;
+    }
+
     /*==================Map==================*/
     .locate {
-        height: 600px;
+        height: 570px;
     }
 
     .locate_inner {
-        height: 600px;
+        height: 570px;
     }
 
     .locate_timing {
-        height: 570px;
-        padding: 15px 0px;
+        height: 550px;
     }
 
     .locate_map {
-        height: 570px;
+        height: 550px;
     }
 
     .map_1980 {
-        width: 697px;
-        height: 571px;
+        width: 667px;
+        height: 551px;
     }
 
     .locate_map_inner iframe {
         padding: 32px 0px 65px 112px;
-        width: 697px;
-        height: 571px;
+        width: 667px;
+        height: 551px;
+    }
+
+    /*==================Footer==================*/
+    .footer h1 {
+        font-size: 36px;
+        margin-bottom: 16px;
+    }
+
+    .footer h2 {
+        font-size: 16px;
     }
 }
 
 @media screen and (max-width: 1130px) {
 
     /*==================Comp==================*/
-    .right_c h2 {
-        font-size: 2.1vw;
+    .comp {
+        height: 510px;
     }
 
-    .right_c li {
-        font-size: 1.9vw;
+    .comp h2 {
+        font-size: 25px;
+        line-height: 75px;
     }
 
-    /*==================footer==================*/
-    .footer_title h1,
-    h2 {
-        line-height: 35px;
+    .comp li {
+        font-size: 24px;
+        line-height: 75px;
     }
 
-    .footer_title h1 {
-        font-size: 2.7vw;
+    /*==================Footer==================*/
+    .footer {
+        height: 100px;
     }
 
-    .footer_title h2 {
-        font-size: 1.3vw;
+    .footer h1 {
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+
+    .footer h2 {
+        font-size: 12px;
     }
 
     .social img {
@@ -896,63 +992,78 @@ li {
 
     /*==================Phone==================*/
     .phone {
-        height: 55vw;
+        padding-top: 95px;
+        height: 460px;
+    }
+
+    .phone h2 {
+        font-size: 27px;
+        line-height: 50px;
+    }
+
+    .phone h3 {
+        font-size: 25px;
+        line-height: 50px;
     }
 
     .phone_inner {
-        width: 80vw;
-        height: 42vw;
+        width: 750px;
+        height: 350px;
+    }
+
+    .left_p {
+        padding: 65px 0px 0px 40px;
+    }
+
+    .right_p {
+        padding-top: 25px;
     }
 
     .right_phone img {
-        width: 80%;
-    }
-
-    .left_p h2,
-    h3 {
-        line-height: 40px;
+        width: 75%;
     }
 
     /*==================Comp==================*/
     .comp {
-        height: 48vw;
+        height: 400px;
     }
 
     .comp_inner_top {
-        height: 48vw;
+        height: 320px;
     }
 
-    .right_c h2,
-    li {
-        line-height: 4vw;
+    .comp h2 {
+        font-size: 22px;
+        line-height: 60px;
+    }
+
+    .comp li {
+        font-size: 20px;
+        line-height: 60px;
     }
 
     .animation_fon.element-show {
-        height: 360px;
+        height: 250px;
     }
 
     .comp_inner_bottom_inner {
-        width: 80%;
-        padding: 40px 70px;
+        width: 850px;
+        padding: 20px 5px;
     }
 
     .comp_inner_bottom_inner h1 {
-        font-size: 2.7vw;
-        line-height: 3.5vw;
-    }
-
-    .comp_inner_bottom_inner .line {
-        margin: 20px 30px;
+        font-size: 22px;
+        line-height: 50px;
     }
 
     /*==================Map==================*/
     .locate {
-        height: 890px;
-        border: 1px solid #000;
+        height: 688px;
     }
 
     .locate_inner {
         flex-wrap: wrap;
+        height: 688px;
         padding-top: 10px;
     }
 
@@ -977,13 +1088,16 @@ li {
     .locate_map {
         order: 1;
         width: 100%;
-        height: 615px;
+        height: 463px;
     }
 
     .locate_map_inner {
         justify-content: center;
     }
 
+    .locate_timing {
+        height: 215px;
+    }
 
     .map_1980 {
         display: none;
@@ -992,12 +1106,16 @@ li {
     .map_768 {
         display: block;
         position: absolute;
-        width: 95%;
+        width: 750px;
+        height: 457px;
+        max-width: 100%;
     }
 
     .locate_map_inner iframe {
-        width: 765px;
-        padding: 20px 0px 35px 0px;
+        width: 750px;
+        height: 457px;
+        max-width: 100%;
+        padding: 15px 80px 60px 80px;
     }
 
     .timing_inner {
@@ -1007,33 +1125,58 @@ li {
     .timing_inner_768 {
         display: flex;
     }
+
+    /*==================Footer==================*/
+    .footer {
+        height: 70px;
+    }
+
+    .footer h1 {
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+
+    .footer h2 {
+        font-size: 8px;
+    }
+
+    .social {
+        padding: 0px 10px;
+    }
+
+    .social img {
+        height: 35px;
+    }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 910px) {
 
-    /*==================Phone==================*/
-    .phone {
-        height: 60vw;
+    /*==================Comp==================*/
+    .animation_fon.element-show {
+        height: 215px;
     }
 
-    /*==================Map==================*/
-    .locate {
-        height: 830px;
+    .comp h2 {
+        font-size: 18px;
+        line-height: 60px;
     }
 
-    .locate_map {
-        height: 550px;
+    .comp li {
+        font-size: 17px;
+        line-height: 60px;
     }
 
-    .locate_map_inner iframe {
-        padding: 16px 40px 100px 40px;
+    .comp_inner_bottom_inner {
+        width: 670px;
+    }
+
+    .comp_inner_bottom_inner h1 {
+        font-size: 20px;
+        line-height: 40px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .line {
-        margin: 15px 15px;
-    }
 
     /*==================Head==================*/
     .header {
@@ -1094,75 +1237,454 @@ li {
 
     /*==================Phone==================*/
     .phone {
-        padding-top: 75px;
-        height: 63vw;
+        padding-top: 70px;
+        height: 390px;
+    }
+
+    .phone h2 {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .phone h3 {
+        font-size: 18px;
+        line-height: 40px;
     }
 
     .phone_inner {
-        width: 90vw;
-        height: 50vw;
+        width: 550px;
+        height: 300px;
+    }
+
+    .left_p {
+        padding: 50px 0px 0px 20px;
     }
 
     .right_p {
-        padding-top: 25px;
+        padding-top: 12px;
+    }
+
+    .right_phone img {
+        width: 90%;
     }
 
     /*==================Comp==================*/
     .comp {
-        height: 45vw;
-        background-size: auto 50%;
+        height: 338px;
     }
 
     .comp_inner_top {
-        height: 45vw;
+        height: 270px;
+    }
+
+    .comp h2 {
+        line-height: 50px;
+    }
+
+    .comp li {
+        line-height: 50px;
+    }
+
+    .laptop img {
+        width: 42%;
+    }
+
+    .left_c {
+        width: 45%;
     }
 
     .right_c {
-        padding: 0px 10px;
-    }
-
-    .right_c .line {
-        margin: 15px 20px;
-    }
-
-    .animation_fon.element-show {
-        height: 300px;
+        width: 55%;
     }
 
     /*==================Map==================*/
     .locate {
-        height: 733px;
+        height: 623px;
     }
 
     .locate_inner {
-        height: 733px;
+        height: 623px;
     }
 
     .locate_map {
-        height: 463px;
+        height: 413px;
     }
 
     .locate_timing {
-        height: 260px;
+        height: 200px;
+    }
+
+    .map_768 {
+        width: 700px;
+        height: 407px;
     }
 
     .locate_map_inner iframe {
-        padding: 12px 90px 60px 90px;
-        height: 463px
+        width: 700px;
+        height: 407px;
+        padding: 15px 75px 55px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    /*==================Comp==================*/
+    .comp h2 {
+        font-size: 17px;
     }
 
-    /*==================footer==================*/
-    .footer {
-        height: 9vw;
+    .comp li {
+        font-size: 16px;
     }
 
-    .footer_title h1,
-    h2 {
+    .animation_fon.element-show {
+        height: 180px;
+    }
+
+    .comp_inner_bottom_inner {
+        width: 565px;
+    }
+
+    .comp_inner_bottom_inner h1 {
+        font-size: 17px;
         line-height: 30px;
+    }
+
+    /*==================Map==================*/
+    .locate {
+        height: 503px;
+    }
+
+    .locate_inner {
+        height: 503px;
+    }
+
+    .locate_timing {
+        height: 130px;
+    }
+
+    .locate_map {
+        height: 363px;
+    }
+
+    .map_768 {
+        width: 570px;
+        height: 350px;
+    }
+
+    .locate_map_inner iframe {
+        width: 570px;
+        height: 350px;
+        padding: 15px 60px 50px;
+    }
+}
+
+@media screen and (max-width: 666px) {
+
+    /*==================Comp==================*/
+    .comp h2 {
+        font-size: 15px;
+    }
+
+    .comp li {
+        font-size: 14px;
+    }
+
+    /*==================Footer==================*/
+    .footer {
+        height: 70px;
+    }
+
+    .footer h1 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .social {
+        padding: 0px 5px;
     }
 
     .social img {
         height: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /*==================Phone==================*/
+    .phone {
+        height: 335px;
+    }
+
+    .phone h2 {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .phone h3 {
+        font-size: 15px;
+        line-height: 32px;
+    }
+
+    .phone_inner {
+        width: 450px;
+        height: 250px;
+    }
+
+    .left_p {
+        padding: 45px 0px 0px 20px;
+    }
+
+    .right_phone img {
+        width: 90%;
+    }
+
+    /*==================Comp==================*/
+    .comp {
+        height: 290px;
+    }
+
+    .comp_inner_top {
+        height: 235px;
+    }
+
+    .comp h2 {
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .comp li {
+        font-size: 13px;
+        line-height: 40px;
+    }
+
+    .animation_fon.element-show {
+        height: 165px;
+    }
+
+    .comp_inner_bottom_inner {
+        width: 475px;
+    }
+
+    .comp_inner_bottom_inner h1 {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    /*==================Map==================*/
+    .locate {
+        height: 445px;
+    }
+
+    .locate_inner {
+        height: 435px;
+    }
+
+    .locate_timing {
+        height: 130px;
+    }
+
+    .locate_map {
+        height: 305px;
+    }
+
+    .map_768 {
+        width: 520px;
+        height: 300px;
+    }
+
+    .locate_map_inner iframe {
+        width: 520px;
+        height: 300px;
+        padding: 15px 60px 50px;
+    }
+}
+
+@media screen and (max-width: 562px) {
+
+    /*==================Comp==================*/
+    .comp h2 {
+        font-size: 13px;
+    }
+
+    .comp li {
+        font-size: 12px;
+    }
+
+    /*==================Footer==================*/
+
+    .footer h1 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .footer h2 {
+        font-size: 8px;
+    }
+
+    .social {
+        padding: 0px 5px;
+    }
+
+    .social img {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+
+    /*==================Comp==================*/
+    .comp {
+        height: 230px;
+    }
+
+    .comp_inner_top {
+        height: 185px;
+    }
+
+    .comp h2 {
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    .comp li {
+        font-size: 11px;
+        line-height: 30px;
+    }
+
+    .animation_fon.element-show {
+        height: 125px;
+    }
+
+    .comp_inner_bottom_inner {
+        width: 410px;
+        padding: 10px 5px;
+    }
+
+    .comp_inner_bottom_inner h1 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    /*==================Map==================*/
+    .locate {
+        height: 385px;
+    }
+
+    .locate_inner {
+        height: 385px;
+    }
+
+    .locate_timing {
+        height: 100px;
+    }
+
+    .locate_map {
+        height: 275px;
+    }
+
+    .map_768 {
+        width: 470px;
+        height: 270px;
+    }
+
+    .locate_map_inner iframe {
+        width: 470px;
+        height: 270px;
+        padding: 10px 50px 40px;
+    }
+
+    /*==================Footer==================*/
+    .footer {
+        height: 50px;
+    }
+
+    .footer h1 {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+
+    .footer h2 {
+        font-size: 6px;
+    }
+
+    .social {
+        padding: 0px 5px;
+    }
+
+    .social img {
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /*==================Phone==================*/
+    .phone {
+        height: 280px;
+    }
+
+    .phone h2 {
+        font-size: 13px;
+        line-height: 23px;
+    }
+
+    .phone h3 {
+        font-size: 12px;
+        line-height: 23px;
+    }
+
+    .phone_inner {
+        width: 350px;
+        height: 200px;
+    }
+
+    .left_p {
+        padding: 40px 0px 0px 10px;
+    }
+
+    .right_phone img {
+        width: 90%;
+    }
+
+    /*==================Map==================*/
+    .locate {
+        height: 355px;
+    }
+
+    .locate_inner {
+        height: 355px;
+    }
+
+    .locate_timing {
+        height: 100px;
+    }
+
+    .locate_map {
+        height: 245px;
+    }
+
+    .map_768 {
+        width: 420px;
+        height: 240px;
+    }
+
+    .locate_map_inner iframe {
+        width: 420px;
+        height: 240px;
+        padding: 10px 45px 35px;
+    }
+}
+
+@media screen and (max-width: 462px) {
+
+    /*==================Comp==================*/
+    .comp h2 {
+        font-size: 9px;
+    }
+
+    .comp li {
+        font-size: 9px;
     }
 }
 
@@ -1223,11 +1745,27 @@ li {
 
     /*==================Phone==================*/
     .phone {
-        padding-top: 46px;
+        height: 245px;
+        padding-top: 45px;
+    }
+
+    .phone h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .phone h3 {
+        font-size: 19px;
+        line-height: 30px;
+    }
+
+    .phone_inner {
+        width: 350px;
+        height: 200px;
     }
 
     .left_p {
-        padding-top: 5%;
+        padding: 25px 10px 0px 10px;
         width: 100%;
     }
 
@@ -1235,17 +1773,18 @@ li {
         display: none;
     }
 
-    .left_p h2,
-    h3 {
-        font-size: 5vw;
-        line-height: 35px;
+    /*==================Comp==================*/
+    .w1980 {
+        display: block;
     }
 
-    /*==================Comp==================*/
+    .w1440 {
+        display: none;
+    }
+
     .comp {
-        height: 65vw;
+        height: 62vw;
         background-size: auto 47%;
-        background:
     }
 
     .comp_inner_top {
@@ -1270,14 +1809,18 @@ li {
     .right_c {
         position: absolute;
         padding: 0px 10px 30px 0px;
+        width: 90%;
+        height: auto;
     }
 
-    .right_c h2 {
+    .comp h2 {
         font-size: 3.3vw;
+        line-height: 4vw;
     }
 
-    .right_c li {
+    .comp li {
         font-size: 2.7vw;
+        line-height: 4vw;
     }
 
     .right_c .line {
@@ -1361,7 +1904,6 @@ li {
         display: block;
     }
 
-
     .footer_logo {
         width: 50%;
     }
@@ -1377,29 +1919,23 @@ li {
 
     .social {
         width: 50%;
+        padding: 0px 6vw;
     }
 
     .social img {
-        height: 40px;
+        height: 8vw;
     }
 }
 
 @media screen and (max-width: 375px) {
 
     /*==================Phone==================*/
-    .left_p {
-        padding-top: 8%;
-        width: 100%;
+    .phone h2 {
+        font-size: 18px;
     }
 
-    .right_p {
-        display: none;
-    }
-
-    .left_p h2,
-    h3 {
-        font-size: 4.9vw;
-        line-height: 25px;
+    .phone h3 {
+        font-size: 17px;
     }
 
     /*==================Comp==================*/
@@ -1427,25 +1963,17 @@ li {
     .locate_timing {
         height: 140px;
     }
-
-    /*==================footer==================*/
-
-    .social img {
-        height: 30px;
-    }
 }
 
 @media screen and (max-width: 320px) {
 
     /*==================Phone==================*/
-    .left_p h2,
-    h3 {
-        font-size: 4.7vw;
-        line-height: 20px;
+    .phone h2 {
+        font-size: 17px;
     }
 
-    .phone {
-        height: 66vw;
+    .phone h3 {
+        font-size: 16px;
     }
 
     /*==================Map==================*/
