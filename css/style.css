@@ -172,7 +172,7 @@ body {
     width: 1170px;
     height: 690px;
     background: rgba(255, 255, 255, 0.2);
-    /*    backdrop-filter: blur(5px);*/
+    backdrop-filter: blur(5px);
     border-radius: 15px;
     border: 1px solid rgb(108, 108, 108);
     box-shadow: 1px 1px 4px 0px rgba(255, 255, 255, 0.9);
@@ -1140,6 +1140,10 @@ body {
         font-size: 8px;
     }
 
+    .footer_logo img {
+        width: 110%;
+    }
+
     .social {
         padding: 0px 10px;
     }
@@ -1323,6 +1327,12 @@ body {
         width: 700px;
         height: 407px;
         padding: 15px 75px 55px;
+    }
+
+    /*==================Footer==================*/
+
+    .footer_logo img {
+        width: 120%;
     }
 }
 
@@ -1910,7 +1920,6 @@ body {
 
     .footer_logo img {
         width: 70%;
-        height: auto;
     }
 
     .footer_title {
